@@ -20,6 +20,7 @@ private:
 
 public:
 
+	// 各ボタンの入力状況のチェック
 	bool InputY() { return GetJoypadInputState(DX_INPUT_PAD1) & PAD_INPUT_1; }
 	bool InputB() { return GetJoypadInputState(DX_INPUT_PAD1) & PAD_INPUT_2; }
 	bool InputA() { return GetJoypadInputState(DX_INPUT_PAD1) & PAD_INPUT_3; }
