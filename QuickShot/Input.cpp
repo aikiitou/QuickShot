@@ -5,43 +5,43 @@ void PadInput::Update()
 
 	GetJoypadAnalogInput(&stickInputX, &stickInputY, DX_INPUT_PAD1);
 
-	if ((GetJoypadInputState(DX_INPUT_PAD1) & PAD_INPUT_1) == TRUE)
+	if (InputY())
 	{
 		inputButtonNum = 1;
 	}
-	else if((GetJoypadInputState(DX_INPUT_PAD1) & PAD_INPUT_2) == TRUE)
+	else if(InputB())
 	{
 		inputButtonNum = 2;
 	}
-	else if ((GetJoypadInputState(DX_INPUT_PAD1) & PAD_INPUT_3) == TRUE)
+	else if (InputA())
 	{
 		inputButtonNum = 3;
 	}
-	else if ((GetJoypadInputState(DX_INPUT_PAD1) & PAD_INPUT_4) == TRUE)
+	else if (InputX())
 	{
 		inputButtonNum = 4;
 	}
-	else if ((GetJoypadInputState(DX_INPUT_PAD1) & PAD_INPUT_5) == TRUE)
+	else if (InputL())
 	{
 		inputButtonNum = 5;
 	}
-	else if ((GetJoypadInputState(DX_INPUT_PAD1) & PAD_INPUT_6) == TRUE)
+	else if (InputR())
 	{
 		inputButtonNum = 6;
 	}
-	else if ((GetJoypadInputState(DX_INPUT_PAD1) & PAD_INPUT_7) == TRUE)
+	else if (InputZL())
 	{
 		inputButtonNum = 7;
 	}
-	else if ((GetJoypadInputState(DX_INPUT_PAD1) & PAD_INPUT_8) == TRUE)
+	else if (InputZR())
 	{
 		inputButtonNum = 8;
 	}
-	else if ((GetJoypadInputState(DX_INPUT_PAD1) & PAD_INPUT_9) == TRUE)
+	else if (InputMINUS())
 	{
 		inputButtonNum = 9;
 	}
-	else if ((GetJoypadInputState(DX_INPUT_PAD1) & PAD_INPUT_10) == TRUE)
+	else if (InputPLUS())
 	{
 		inputButtonNum = 10;
 	}
