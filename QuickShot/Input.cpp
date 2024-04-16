@@ -54,6 +54,6 @@ void PadInput::Update()
 
 void PadInput::DebugDraw()
 {
-	DrawFormatString(50, 50, GetColor(255, 255, 255), "X:%d,Y:%d", stickInputX, stickInputY);
-	DrawFormatString(50, 100, GetColor(255, 255, 255), "ButtonNum:%d", inputButtonNum);
+	DrawFormatString(0, 70, GetColor(255, 255, 255), "X:%d,Y:%d", stickInputX, stickInputY);
+	DrawFormatString(0, 100, GetColor(255, 255, 255), "ButtonNum:%d", inputButtonNum);
 }
