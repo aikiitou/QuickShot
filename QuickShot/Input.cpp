@@ -45,6 +45,22 @@ void PadInput::Update()
 	{
 		inputButtonNum = 10;
 	}
+	else if (InputLeft())
+	{
+		inputButtonNum = 11;
+	}
+	else if (InputDown())
+	{
+		inputButtonNum = 12;
+	}
+	else if (InputRight())
+	{
+		inputButtonNum = 13;
+	}
+	else if (InputUp())
+	{
+		inputButtonNum = 14;
+	}
 	else
 	{
 		inputButtonNum = 0;
