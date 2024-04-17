@@ -5,43 +5,43 @@ void PadInput::Update()
 
 	GetJoypadAnalogInput(&stickInputX, &stickInputY, DX_INPUT_PAD1);
 
-	if (InputY())
+	if (InputWest())
 	{
 		inputButtonNum = 1;
 	}
-	else if(InputB())
+	else if(InputSouth())
 	{
 		inputButtonNum = 2;
 	}
-	else if (InputA())
+	else if (InputEast())
 	{
 		inputButtonNum = 3;
 	}
-	else if (InputX())
+	else if (InputNorth())
 	{
 		inputButtonNum = 4;
 	}
-	else if (InputL())
+	else if (InputLShoulder())
 	{
 		inputButtonNum = 5;
 	}
-	else if (InputR())
+	else if (InputRShoulder())
 	{
 		inputButtonNum = 6;
 	}
-	else if (InputZL())
+	else if (InputLTrigger())
 	{
 		inputButtonNum = 7;
 	}
-	else if (InputZR())
+	else if (InputRTrigger())
 	{
 		inputButtonNum = 8;
 	}
-	else if (InputMINUS())
+	else if (InputSELECT())
 	{
 		inputButtonNum = 9;
 	}
-	else if (InputPLUS())
+	else if (InputSTART())
 	{
 		inputButtonNum = 10;
 	}
@@ -54,6 +54,6 @@ void PadInput::Update()
 
 void PadInput::DebugDraw()
 {
-	DrawFormatString(0, 70, GetColor(255, 255, 255), "X:%d,Y:%d", stickInputX, stickInputY);
+	DrawFormatString(0, 70, GetColor(255, 255, 255), "X:%d,Y:%d", StickX(), StickY());
 	DrawFormatString(0, 100, GetColor(255, 255, 255), "ButtonNum:%d", inputButtonNum);
 }
